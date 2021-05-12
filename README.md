@@ -11,7 +11,6 @@
 App showing current news and what's happening on the web.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:**
 - **Mobile:**
 - **Story:**
