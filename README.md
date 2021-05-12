@@ -48,7 +48,7 @@ App showing current news and what's happening on the web.
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="https://imgur.com/a/VViZ930" width=600>
+<img src="figma.PNG" width=600>
 
 
 ## Schema 
