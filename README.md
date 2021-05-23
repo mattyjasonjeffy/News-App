@@ -44,6 +44,12 @@ App showing current news and what's happening on the web.
 
 * One tab containing the list view of cells
 
+## Sprint Progress
+
+## Sprint 2
+<img src="walkthrough1.gif" width=600>
+
+
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
