@@ -24,7 +24,7 @@ App showing current news and what's happening on the web.
 
 **Required Must-have Stories**
 
-* Show current news on the web as cell objects, filling cells using API call
+* [X] Show current news on the web as cell objects, filling cells using API call
 
 
 **Optional Nice-to-have Stories**
