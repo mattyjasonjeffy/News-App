@@ -11,12 +11,12 @@
 App showing current news and what's happening on the web.
 
 ### App Evaluation
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category: Simple news app. **
+- **Mobile: Simple news app. **
+- **Story: Allows readers to search through news. ** 
+- **Market: Everyday news consumers. **
+- **Habit: Morning news search. **
+- **Scope: Everyday news consumers. **
 
 ## Product Spec
 
