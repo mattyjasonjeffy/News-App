@@ -29,7 +29,7 @@ App showing current news and what's happening on the web.
 
 **Optional Nice-to-have Stories**
 
-* Save favorite news articles/events
+* [X] Save favorite news articles/events
 
 
 ### 2. Screen Archetypes
@@ -45,6 +45,9 @@ App showing current news and what's happening on the web.
 * One tab containing the list view of cells
 
 ## Sprint Progress
+
+## Sprint 3
+![Demo File](https://github.com/mattyjasonjeffy/News-App/blob/main/walkthrough2.gif)
 
 ## Sprint 2
 <img src="walkthrough1.gif" width=600>
