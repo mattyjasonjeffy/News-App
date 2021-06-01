@@ -57,8 +57,16 @@ App showing current news and what's happening on the web.
 
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+#### Post
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | title   | String     | Title of each news article |
+   | description     | String | Synopsis of each news article |
+
 ### Networking
-- Use an open news source to make an API call to and gather article information and links.
+#### List of network requests by screen
+   - HomeScreen
+      - (Read/GET) Get NewsAPI articles information for news model class
+   
