@@ -13,11 +13,12 @@ class NewsViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var news = [[String:Any]]()
     
     override func viewDidLoad() {
+        navigationController?.navigationBar.prefersLargeTitles = true
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         
-        let url = URL(string: "https://newsapi.org/v2/everything?q=tesla&from=2021-04-23&sortBy=publishedAt&apiKey=ddef7f82601645ae80e6e10c095fcbf5")!
+        let url = URL(string: "https://newsapi.org/v2/everything?q=tesla&from=2021-05-01&sortBy=publishedAt&apiKey=d5308dd9a980452185f53787c1cfcf05")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in

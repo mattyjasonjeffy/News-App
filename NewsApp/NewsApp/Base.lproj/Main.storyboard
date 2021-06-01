@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bIA-al-cc8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bIA-al-cc8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Movies-->
+        <!--NEWS-->
         <scene sceneID="n8d-Db-vcC">
             <objects>
                 <viewController id="mBe-zd-o9q" customClass="NewsViewController" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,28 +21,37 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="190" id="hSS-Rx-mkx" customClass="NewsCell" customModule="NewsApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="25" width="414" height="190"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="190" id="hSS-Rx-mkx" customClass="NewsCell" customModule="NewsApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="190"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hSS-Rx-mkx" id="TMG-rZ-iLV">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyS-od-wXb">
-                                                    <rect key="frame" x="10" y="4" width="395" height="123"/>
+                                                    <rect key="frame" x="10" y="67" width="395" height="123"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nf-wQ-H4b">
-                                                    <rect key="frame" x="10" y="135" width="395" height="45"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nf-wQ-H4b">
+                                                    <rect key="frame" x="10" y="11" width="334" height="45"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2S-gM-9JK">
+                                                    <rect key="frame" x="358" y="18" width="34" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Save"/>
+                                                    <connections>
+                                                        <action selector="SaveArticle:" destination="hSS-Rx-mkx" eventType="touchUpInside" id="6HL-Kd-Ick"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="descriptionLabel" destination="UyS-od-wXb" id="1Fs-g1-bwu"/>
@@ -55,7 +64,15 @@
                         <viewLayoutGuide key="safeArea" id="EJz-xD-m9X"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Movies" id="41z-WG-IMS"/>
+                    <navigationItem key="navigationItem" title="NEWS" id="41z-WG-IMS">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="bookmark-white" style="plain" id="cpI-fc-PGo">
+                            <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="0.0"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="Ztr-oM-0Jm" kind="show" id="ESy-PC-HTz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="F1u-xh-o77" id="v9f-EW-Ph0"/>
                     </connections>
@@ -63,6 +80,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ynk-Wn-3dZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-242.0289855072464" y="-275.22321428571428"/>
+        </scene>
+        <!--SAVED ARTICLES-->
+        <scene sceneID="g0A-rh-PJq">
+            <objects>
+                <tableViewController id="Ztr-oM-0Jm" customClass="SavedNewsViewController" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yKS-OY-zS5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SavedNewsCell" rowHeight="192" id="ir5-2N-wuA" customClass="SavedNewsCell" customModule="NewsApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="192"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ir5-2N-wuA" id="CmK-EV-ncF">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="192"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRR-yp-dAd">
+                                            <rect key="frame" x="20" y="11" width="368" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="tvi-qq-qFl"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efu-j8-sLd">
+                                            <rect key="frame" x="20" y="40" width="374" height="141"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="XRR-yp-dAd" firstAttribute="top" secondItem="CmK-EV-ncF" secondAttribute="topMargin" id="6mu-ax-hp9"/>
+                                        <constraint firstItem="efu-j8-sLd" firstAttribute="trailing" secondItem="CmK-EV-ncF" secondAttribute="trailingMargin" id="8i4-Yc-Xcb"/>
+                                        <constraint firstItem="efu-j8-sLd" firstAttribute="top" secondItem="XRR-yp-dAd" secondAttribute="bottom" constant="11" id="Gox-90-Dfl"/>
+                                        <constraint firstItem="efu-j8-sLd" firstAttribute="bottom" secondItem="CmK-EV-ncF" secondAttribute="bottomMargin" id="lAa-qU-C93"/>
+                                        <constraint firstItem="XRR-yp-dAd" firstAttribute="leading" secondItem="CmK-EV-ncF" secondAttribute="leadingMargin" id="lnA-bn-vjR"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="XRR-yp-dAd" secondAttribute="trailing" constant="6" id="w94-iy-UfH"/>
+                                        <constraint firstItem="efu-j8-sLd" firstAttribute="leading" secondItem="CmK-EV-ncF" secondAttribute="leadingMargin" id="wM4-nN-Oeg"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="savedNewsDescriptionLabel" destination="efu-j8-sLd" id="r6b-bd-1li"/>
+                                    <outlet property="savedNewsLabel" destination="XRR-yp-dAd" id="r8J-Aa-top"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ztr-oM-0Jm" id="gMg-dV-eWP"/>
+                            <outlet property="delegate" destination="Ztr-oM-0Jm" id="14H-AJ-baa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="SAVED ARTICLES" id="cMI-cE-Ap7"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q7z-wd-ymi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="573.91304347826087" y="-275.22321428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hUJ-Zb-lb3">
@@ -72,6 +148,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fsp-dE-iPX">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.87450980389999999" green="0.43137254899999999" blue="0.3411764706" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -84,6 +161,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bookmark-white" width="16" height="16"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
